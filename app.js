@@ -1,22 +1,23 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
+import arry from "./componets/constant";
 const Aplayout = () => {
-  const [change, setChage] = useState("hello shubham ");
+  const [myarry, setmyarry] = useState(arry);
   return (
     <>
       <div className="div-1">
-        <h1 className="sk">{change}</h1>
+        {myarry.map((java) => (
+          <h1 className="sk" key={java.id}>
+            Name:{java.name} Age:{java.age}
+          </h1>
+        ))}
         <button
           className="btn"
           onClick={() => {
-            if (change == "hello shubham ") {
-              setChage("Subscribe Shubham ");
-            } else {
-              setChage("hello shubham ");
-            }
+            setmyarry([]);
           }}
         >
-          click
+          clear
         </button>
       </div>
     </>

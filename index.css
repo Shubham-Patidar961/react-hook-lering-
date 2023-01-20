@@ -6,15 +6,20 @@ body {
   align-items: center;
 }
 .sk {
-  color: white;
-  font-size: 89px;
+  background-color: antiquewhite;
+  padding: 1rem;
+  border-radius: 25px;
+  color: rgb(122, 122, 164);
 }
 .div-1 {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .btn {
-  padding: 0.65rem 2rem 0.65rem 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   font-size: larger;
+  align-items: center;
 }
 .btn:hover {
   color: rgb(136, 136, 233);
