@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(129, 129, 226);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sk {
+  color: white;
+  font-size: 89px;
+}
+.div-1 {
+  text-align: center;
+}
+.btn {
+  padding: 0.65rem 2rem 0.65rem 2rem;
+  font-size: larger;
+}
+.btn:hover {
+  color: rgb(136, 136, 233);
+}
