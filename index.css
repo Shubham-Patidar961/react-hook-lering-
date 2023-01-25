@@ -1,26 +1,24 @@
-body {
-  background-color: rgb(129, 129, 226);
+.contaner {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(129, 129, 223);
 }
-.sk {
-  background-color: antiquewhite;
+.form {
+  height: 300px;
+  width: 200px;
+  background-color: white;
   padding: 1rem;
-  border-radius: 25px;
-  color: rgb(122, 122, 164);
 }
-.div-1 {
-  text-align: center;
+.submit {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  padding-top: 1rem;
 }
 .btn {
-  padding: 1rem 2rem 1rem 2rem;
-  font-size: larger;
-  align-items: center;
-}
-.btn:hover {
-  color: rgb(136, 136, 233);
+  padding: 0.65rem 2rem 0.65rem 2rem;
+  background-color: rgb(129, 129, 223);
+  border-radius: 4px;
+  border: 2px solid rgb(129, 129, 223);
 }
