@@ -3,13 +3,13 @@ import ReactDOM from "react-dom/client";
 import { useState } from "react";
 //import UsestateObject from "./componets/usestateObject";
 const Body = () => {
-  let [email, setemail] = useState();
-  let [password, setpassword] = useState();
+  const [email, setemail] = useState();
+  const [password, setpassword] = useState();
+  const [allarry, setallarry] = useState([]);
+  console.log(allarry);
   const Login = () => {
-    let newarryemail = [];
-    let newarrypassword = [];
-    newarryemail.push(email);
-    newarrypassword.push(password);
+    newarry = { email, password };
+    setallarry([...allarry, newarry]);
     setemail("");
     setpassword("");
   };
@@ -24,8 +24,7 @@ const Body = () => {
             placeholder="email"
             value={email}
             onChange={(e) => {
-              email = e.target.value;
-              setemail(email);
+              setemail(e.target.value);
             }}
           />
         </div>
@@ -37,8 +36,7 @@ const Body = () => {
             placeholder="password"
             value={password}
             onChange={(e) => {
-              password = e.target.value;
-              setpassword(password);
+              setpassword(e.target.value);
             }}
           />
         </div>
