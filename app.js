@@ -8,19 +8,23 @@ const Body = () => {
   const [allarry, setallarry] = useState([]);
   console.log(allarry);
   const Login = () => {
-    newarry = { email, password };
-    setallarry([...allarry, newarry]);
-    setemail("");
-    setpassword("");
+    if (email && password) {
+      newarry = { email, password };
+      setallarry([...allarry, newarry]);
+      setemail("");
+      setpassword("");
+    } else {
+      alert("provide input");
+    }
   };
   return (
     <div className="contaner">
       <div className="form">
-        <div>
+        <div className="emaildiv">
           <label>email:</label>
           <input
             className="email"
-            type="email"
+            type="text"
             placeholder="email"
             value={email}
             onChange={(e) => {
@@ -28,7 +32,7 @@ const Body = () => {
             }}
           />
         </div>
-        <div>
+        <div className="passdiv">
           <label>password:</label>
           <input
             className="email"
